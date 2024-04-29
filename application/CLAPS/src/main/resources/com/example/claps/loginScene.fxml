@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="932.0" prefWidth="430.0" style="-fx-background-color: #444444;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.claps.loginSceneController">
+   <ImageView fx:id="logoText" fitWidth="174.0" layoutX="128.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../Images/ChiClaps.png" />
+   </ImageView>
+   <AnchorPane layoutX="19.0" layoutY="258.0" prefHeight="619.0" prefWidth="392.0" style="-fx-background-color: #333333; -fx-background-radius: 11;">
+      <TextField fx:id="tfEmail" layoutX="46.0" layoutY="122.0" prefHeight="45.0" prefWidth="300.0" promptText="Email" style="-fx-background-color: transparent; -fx-border-color: #707070; -fx-border-radius: 11; -fx-text-fill: white;">
+         <font>
+            <Font name="Verdana" size="20.0" />
+         </font>
+      </TextField>
+      <Label layoutX="127.0" layoutY="24.0" text="Login" textFill="#3399cc">
+         <font>
+            <Font name="Verdana" size="48.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="tfWachtwoord" layoutX="46.0" layoutY="178.0" prefHeight="45.0" prefWidth="300.0" promptText="Wachtwoord" style="-fx-background-color: transparent; -fx-border-color: #707070; -fx-border-radius: 11; -fx-text-fill: white;">
+         <font>
+            <Font name="Verdana" size="20.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="btnLogin" layoutX="66.0" layoutY="252.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="45.0" prefWidth="260.0" style="-fx-background-color: #3399cc; -fx-background-radius: 11;" text="Login" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Verdana" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAanmelden" layoutX="66.0" layoutY="310.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="260.0" style="-fx-background-color: transparent; -fx-border-color: #707070; -fx-border-radius: 11;" text="Aanmelden" textAlignment="CENTER" textFill="#707070">
+         <font>
+            <Font name="Verdana" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnGegVergeten" layoutX="121.0" layoutY="365.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: #707070; -fx-border-radius: 11;" text="Gegevens vergeten" textAlignment="CENTER" textFill="#707070" wrapText="true">
+         <font>
+            <Font name="Verdana" size="20.0" />
+         </font>
+      </Button>
+   </AnchorPane>
+</AnchorPane>

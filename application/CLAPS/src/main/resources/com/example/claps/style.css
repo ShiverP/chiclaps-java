@@ -1,0 +1,62 @@
+
+.bar-chart {
+    -fx-alternative-row-visible: false;
+    -fx-alternative-column-visible: false;
+    -fx-horizontal-grid-lines-visible: false;
+    -fx-vertical-grid-lines-visible:false;
+    -fx-horizontal-zero-line-visible: false;
+    -fx-vertical-zero-line-visible: false;
+    -fx-legend-visible: false;
+}
+
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.axis {
+    -fx-border-color: transparent;
+    -fx-tick-mark-visible: false;
+    -fx-minor-tick-visible: false;
+    -fx-tick-labels-visible: false;
+}
+
+.chart-bar {
+    -fx-bar-fill: #3399cc;
+}
+
+.progress-bar{
+    -fx-accent: #3399cc;
+}
+
+.progress-bar .bar {
+    -fx-padding: 1px;
+    -fx-background-insets: 0;
+    -fx-background-radius: 11;
+}
+
+.progress-bar > .track {
+    -fx-border-radius: 11;
+    -fx-background-radius: 11;
+    -fx-background-radius: 0;
+    -fx-text-box-border: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-border-color: #707070;
+    -fx-background-color: transparent;
+}
+
+.slider{
+    -fx-pref-width: 300px;
+}
+
+.slider .track{
+    -fx-background-color: #444444;
+    -fx-pref-height: 45px;
+}
+
+.slider .thumb{
+    -fx-pref-width: 15px;
+    -fx-pref-height: 45px;
+    -fx-background-color: #333333;
+    -fx-border-color: #707070;
+    -fx-border-radius: 11px;
+}

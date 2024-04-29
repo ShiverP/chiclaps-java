@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="932.0" prefWidth="430.0" style="-fx-background-color: #444444;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.claps.menuSceneController">
+   <Button fx:id="buttonLogout" layoutX="340.0" layoutY="10.0" mnemonicParsing="false" onAction="#logoutButton" prefHeight="30.0" prefWidth="80.0" style="-fx-border-color: #777777; -fx-background-color: transparent; -fx-border-radius: 11;" text="Log uit" textFill="#777777">
+      <font>
+         <Font name="Verdana" size="14.0" />
+      </font>
+   </Button>
+   <Button fx:id="buttonMenu" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#menuButton" prefHeight="30.0" prefWidth="60.0" style="-fx-border-color: #777777; -fx-background-color: transparent; -fx-border-radius: 11;" text="X" textFill="#777777">
+      <font>
+         <Font name="Verdana" size="14.0" />
+      </font>
+   </Button>
+   <AnchorPane layoutX="25.0" layoutY="195.0" prefHeight="702.0" prefWidth="380.0" style="-fx-background-color: #333333; -fx-background-radius: 11;">
+      <children>
+         <Label layoutX="40.0" layoutY="265.0" text="Limiet" textFill="#707070">
+            <font>
+               <Font name="Verdana" size="24.0" />
+            </font>
+         </Label>
+         <Button fx:id="btnSave" layoutX="40.0" layoutY="376.0" mnemonicParsing="false" onAction="#setLimit" prefHeight="45.0" prefWidth="300.0" style="-fx-background-color: transparent; -fx-border-color: #707070; -fx-border-radius: 11;" text="Gereed" textFill="#707070">
+            <font>
+               <Font name="Verdana" size="24.0" />
+            </font>
+         </Button>
+         <TextField fx:id="tfLimietDag" layoutX="40.0" layoutY="303.0" prefHeight="45.0" prefWidth="300.0" style="-fx-background-color: transparent; -fx-border-color: #707070; -fx-border-radius: 11; -fx-text-fill: white;">
+            <font>
+               <Font name="Verdana" size="24.0" />
+            </font>
+         </TextField>
+         <Button fx:id="btnUsage" layoutX="32.0" layoutY="376.0" mnemonicParsing="false" onAction="#viewUsage" style="-fx-background-color: transparent; -fx-border-color: transparent;" />
+      </children>
+   </AnchorPane>
+   <ImageView fitWidth="174.0" layoutX="128.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../../Images/ChiClaps.png" />
+      </image>
+   </ImageView>
+</AnchorPane>

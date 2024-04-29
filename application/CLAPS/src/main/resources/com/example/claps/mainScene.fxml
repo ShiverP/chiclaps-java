@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="932.0" prefWidth="430.0" style="-fx-background-color: #444444;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.claps.mainSceneController">
+   <Button fx:id="buttonLogout" layoutX="340.0" layoutY="10.0" mnemonicParsing="false" onAction="#logoutButton" prefHeight="30.0" prefWidth="80.0" style="-fx-border-color: #777777; -fx-background-color: transparent; -fx-border-radius: 11;" text="Log uit" textFill="#777777">
+      <font>
+         <Font name="Verdana" size="14.0" />
+      </font>
+   </Button>
+   <Button fx:id="buttonMenu" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#menuButton" prefHeight="30.0" prefWidth="60.0" style="-fx-border-color: #777777; -fx-background-color: transparent; -fx-border-radius: 11;" text="Menu" textFill="#777777">
+      <font>
+         <Font name="Verdana" size="14.0" />
+      </font>
+   </Button>
+   <ImageView fx:id="logoText" fitWidth="174.0" layoutX="128.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../Images/ChiClaps.png" />
+   </ImageView>
+   <Arc fx:id="arcVerbruikDag" fill="#1f93ff00" layoutX="215.0" layoutY="335.0" radiusX="140.0" radiusY="140.0" stroke="#339ccc" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="15.0" visible="false" />
+   <Button fx:id="btnToggleUsage" layoutX="71.0" layoutY="195.0" mnemonicParsing="false" onAction="#connectButton" style="-fx-text-fill: transparent; -fx-background-color: transparent;" textFill="TRANSPARENT">
+      <graphic>
+         <Circle fill="#333333" radius="135.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      </graphic>
+   </Button>
+   <Label fx:id="lblVandaag" layoutX="163.0" layoutY="300.0" text="Vandaag" textAlignment="CENTER" textFill="#3399cc" visible="false">
+      <font>
+         <Font name="Verdana" size="24.0" />
+      </font>
+   </Label>
+   <BarChart fx:id="BCweek" alternativeColumnFillVisible="true" focusTraversable="true" layoutX="30.0" layoutY="518.0" legendSide="TOP" legendVisible="false" prefHeight="391.0" prefWidth="368.0" style="-fx-background-color: #333333; -fx-background-radius: 11;" stylesheets="@style.css">
+     <xAxis>
+       <CategoryAxis side="BOTTOM" tickMarkVisible="false" />
+     </xAxis>
+     <yAxis>
+       <NumberAxis minorTickVisible="false" side="LEFT" tickLabelFill="#777777" tickLength="15.0" upperBound="300.0" />
+     </yAxis>
+   </BarChart>
+   <Label fx:id="lblWeek" layoutX="40.0" layoutY="493.0" text="Deze week:" textFill="#707070" visible="false">
+      <font>
+         <Font name="Verdana" size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="lblUsage" layoutX="399.0" layoutY="555.0" text="limit" textFill="WHITE" visible="false">
+      <font>
+         <Font name="Verdana" size="12.0" />
+      </font>
+   </Label>
+   <Label fx:id="lblHalfUsage" layoutX="402.0" layoutY="705.0" text="" textFill="WHITE" visible="false" />
+   <Label fx:id="lbl0" layoutX="409.0" layoutY="883.0" text="0" textFill="WHITE" visible="false" />
+</AnchorPane>
